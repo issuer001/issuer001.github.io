@@ -588,8 +588,6 @@ function trim(str) {
 //Retrieve a query string parameter
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-		alert("the name of getParameterByName is " + results);//comeback
-
     var regexS = "[\\?&]" + name + "=([^&#]*)";
     var regex = new RegExp(regexS);
     var results = regex.exec(window.location.href);
@@ -607,6 +605,8 @@ function CaptureCode() {
     if (q !== null && q !== "") {
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
+				alert("the value of cookie is " + GetCodeByName("couponCode"));//comeback
+
     }
 }
 //Save a code from an action, not a URL, using the defined variables
