@@ -591,6 +591,7 @@ function getParameterByName(name) {
     var regexS = "[\\?&]" + name + "=([^&#]*)";
     var regex = new RegExp(regexS);
     var results = regex.exec(window.location.href);
+		alert("the results parameter is " + results);//comeback
     if (results === null) {
         return "";
     } else {
@@ -602,7 +603,6 @@ function getParameterByName(name) {
 //Extract the code from the URL based on the defined parameter name
 function CaptureCode() {
     var q = getParameterByName(URLParameterName);
-		alert("the parameter is " + q);
     if (q !== null && q !== "") {
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
