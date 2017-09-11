@@ -519,7 +519,7 @@
 	}
 	checkIdType();
 </script>
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 </head>
 <body>
 	<!--head-->
@@ -1135,7 +1135,7 @@ CaptureCode();
 			messagingSenderId: "542760776745"
 		};
 		firebase.initializeApp(config);
-    var messagesRef = firebase;
+    var messagesRef = new Firebase('https://fundaztic-affiliate-tracking.firebaseio.com');
 
     var messageField = document.getElementById('messageInput');
     var messageResults = document.getElementById('results');
