@@ -519,6 +519,7 @@
 	}
 	checkIdType();
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 </head>
 <body>
 	<!--head-->
@@ -1116,17 +1117,43 @@ CaptureCode();
 </script>
 
 
-<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCPy5NbnwkPJS6_h39YJ8MwEAyctS8ir2Y",
-    authDomain: "fundaztic-affiliate-tracking.firebaseapp.com",
-    databaseURL: "https://fundaztic-affiliate-tracking.firebaseio.com",
-    projectId: "fundaztic-affiliate-tracking",
-    storageBucket: "",
-    messagingSenderId: "542760776745"
-  };
-  firebase.initializeApp(config);
-</script>
+<h2>Firebase Example</h2>
+    <input type='text' id='messageInput'  placeholder='Enter your data here...'>
+    <button type="button" onclick="savedata()">Save Data</button>
+    <br><br><br>
+    <hr>
+    <h2>Results</h2>
+    <textarea rows="10" cols="50" id="results"></textarea>
+    <script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCPy5NbnwkPJS6_h39YJ8MwEAyctS8ir2Y",
+			authDomain: "fundaztic-affiliate-tracking.firebaseapp.com",
+			databaseURL: "https://fundaztic-affiliate-tracking.firebaseio.com",
+			projectId: "fundaztic-affiliate-tracking",
+			storageBucket: "",
+			messagingSenderId: "542760776745"
+		};
+		firebase.initializeApp(config);
+    var messagesRef = firebase;
+
+    var messageField = document.getElementById('messageInput');
+    var messageResults = document.getElementById('results');
+    // Save data to firebase
+    function savedata(){
+      var message = messageField.value;
+      messagesRef.push({fieldName:'messageField', text:message});
+      messageField.value = '';
+    }
+    // Update results when data is added
+    messagesRef.limitToLast(10).on('child_added', function (snapshot) {
+        var data = snapshot.val();
+        console.log(snapshot.val());
+        var message = data.text;
+        if (message != undefined)
+        {
+          messageResults.value += '\n' + message;
+        }
+    });
+    </script>
 </html>
