@@ -603,10 +603,9 @@ function getParameterByName(name) {
 function CaptureCode() {
     var q = getParameterByName(URLParameterName);
     if (q !== null && q !== "") {
+			alert("What is q: " + q);//comeback
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
-				alert("the value of cookie is " + GetCodeByName("couponCode"));//comeback
-
     }
 }
 //Save a code from an action, not a URL, using the defined variables
