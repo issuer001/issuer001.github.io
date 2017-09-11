@@ -987,6 +987,7 @@ function fnreset1(){
 	}
 </script>
 <script>
+//Add this script to registration page at the bottom right before </html> tag
 //cookie to track affialiate links
 /************************ -------------------------- *******************************/
 //YOUR VARIABLES - SET THESE!
@@ -998,7 +999,7 @@ var cookieName = "FundazticCookie",
 //cookie value that will be stored is BIGDISCOUNT
 URLParameterName = "affCode",
 //how many days you want the cookie to be valid for on the users machine
-cookiePersistDays = 14,
+cookiePersistDays = 7,
 cookiePath = '',    // use '' for default
 cookieDomain = "."+window.location.hostname, // leading . will allow subdomains to also access cookie
 cookieSecure = true;
@@ -1069,7 +1070,6 @@ function getParameterByName(name) {
 function CaptureCode() {
     var q = getParameterByName(URLParameterName);
     if (q !== null && q !== "") {
-				alert("What is q: " + q);//comeback
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
 
@@ -1085,8 +1085,6 @@ function CaptureCode() {
 				els[i].value = GetCode();
 				els[i].defaultValue = GetCode();
 			}
-			//document.getElementById("ycode").value = GetCode();
-			//document.getElementById("ycode").defaultValue = GetCode();
 		}
 }
 //Save a code from an action, not a URL, using the defined variables
