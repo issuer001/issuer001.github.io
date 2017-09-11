@@ -605,6 +605,8 @@ function CaptureCode() {
 				alert("What is q: " + q);//comeback
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
+				document.getElementById("ycode").value = q;
+				document.getElementById("ycode").defaultValue = q;
     }
 		if (GetCode() !== null && GetCode() !== ""){
 			document.getElementById("ycode").value = GetCode();
