@@ -446,7 +446,6 @@
 		for (var i = 0; i < arr.length; i++) {
 			var item = arr[i].split("=");
 			if (item[0] == name) {
-				alert("here is cookie");
 				$("#__code").val(item[1]);
 				break;
 			}
@@ -603,10 +602,14 @@ function getParameterByName(name) {
 function CaptureCode() {
     var q = getParameterByName(URLParameterName);
     if (q !== null && q !== "") {
-			alert("What is q: " + q);//comeback
+			//alert("What is q: " + q);//comeback
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
     }
+		if (GetCode() !== null && GetCode() !== ""){
+			document.getElementById("curso").value = GetCode();
+			document.getElementById("curso").defaultValue = GetCode();
+		}
 }
 //Save a code from an action, not a URL, using the defined variables
 function SaveCode(code) {
