@@ -1073,22 +1073,18 @@ function CaptureCode() {
         eraseCookie(cookieName);
         createCookie(cookieName, q, cookiePersistDays);
 
-				var els = document.getElementsById("ycode");
-				Array.prototype.forEach.call(els, function(el) {
-				    // Do stuff here
-				    el.setAttribute(q);
-						el.defaultValue = q;
-				});
-				//document.getElementById("ycode").value = q;
-				//document.getElementById("ycode").defaultValue = q;
+				var els=document.getElementsByName("ycode");
+				for (var i=0;i<els.length;i++) {
+					els[i].value = GetCode();
+					els[i].defaultValue = GetCode();
+				}
     }
 		if (GetCode() !== null && GetCode() !== ""){
-			var els = document.getElementsById("ycode");
-			Array.prototype.forEach.call(els, function(el) {
-					// Do stuff here
-					el.setAttribute(q);
-					el.defaultValue = q;
-			});
+			var els=document.getElementsByName("ycode");
+			for (var i=0;i<els.length;i++) {
+				els[i].value = GetCode();
+				els[i].defaultValue = GetCode();
+			}
 			//document.getElementById("ycode").value = GetCode();
 			//document.getElementById("ycode").defaultValue = GetCode();
 		}
