@@ -520,7 +520,7 @@
 	checkIdType();
 </script>
 <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-<!-- Start of Async Drift Code 
+<!-- Start of Async Drift Code
 <script>
 !function() {
   var t;
@@ -952,6 +952,16 @@ $(document).ready(function(){
 		<div class="footer-copyright">Copyright © 2017 Peoplender Sdn Bhd. All Rights Reserved.</div>
 		<div class="clearfloat"></div>
 	</div>
+	<script>
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if (isMobile) {
+	  if (window.location.href.toString()=="https://p2p.fundaztic.com/loaninfo/openLoan.htm"){
+	    alert("Hello! This is mobile");
+	      //window.location.href = "";
+	  }
+	}
+	</script>
 </footer>
 <script type="text/javascript">
 	$(function($) {
