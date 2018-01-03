@@ -953,17 +953,20 @@ $(document).ready(function(){
 		<div class="clearfloat"></div>
 	</div>
 	<script>
-
 	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if (isMobile) {
-		if (window.location.href.toString().indexOf("https://issuer001.github.io") != -1) {
-			alert("Hello! This is mobile, the URL contains issuer001.github.io");
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/loaninfo/openLoan.htm") != -1) {
 			window.location.href = "https://p2p.fundaztic.com/mobileLoan/loans";
 		}
-	  // if (window.location.href.toString()=="https://p2p.fundaztic.com/loaninfo/openLoan.htm"){
-	  //   alert("Hello! This is mobile");
-	  //     //window.location.href = "";
-	  // }
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/visitor/to-login") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileVisitor/to-login";
+		}
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/visitor/to-regist") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileRegistration/to-regist";
+		}
+		if (window.location.href.toString().indexOf("https://issuer001.github.io") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileRegistration/to-regist";
+		}
 	}
 	</script>
 </footer>
