@@ -967,7 +967,17 @@ $(document).ready(function(){
 		if (window.location.href.toString().indexOf("https://issuer001.github.io") != -1) {
 			window.location.href = "https://p2p.fundaztic.com/mobileRegistration/to-regist";
 		}
-	}
+	} else {
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileLoan/loans") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/loaninfo/openLoan.htm";
+    }
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileVisitor/to-login") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/visitor/to-login";
+    }
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileRegistration/to-regist") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/visitor/to-regist";
+    }
+  }
 	</script>
 </footer>
 <script type="text/javascript">
