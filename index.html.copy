@@ -1,0 +1,1214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="https://p2p.fundaztic.com:443/" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="A Brand New Investment For You on Fundaztic - Best Peer-to-Peer Financing Platform in Malaysia (Peoplender Sdn. Bhd.)" />
+<meta itemprop="description" content="Fundaztic - Where smart investors and entrepreneurs connect" />
+<meta itemprop="image" content="https://www.fundaztic.com/img/fb-preview.png" />
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="FREE RM50 bonus to invest!" />
+<meta name="og:description" content="Sign up now to claim RM50 bonus to invest. A Brand New Investment For You on Fundaztic (Peoplender Sdn. Bhd.). Terms and Conditions apply." />
+<meta name="og:image" content="https://www.fundaztic.com/img/fundaztic-bonus.png" />
+<meta name="og:url" content="https://www.fundaztic.com/" />
+<meta name="og:site_name" content="Fundaztic - A Brand New Investment For You! Best Peer-to-Peer Financing Platform in Malaysia (Peoplender Sdn. Bhd.)" />
+<meta name="og:video" content="https://www.youtube.com/watch?v=Y0eQG1Taf8c" />
+<meta name="og:type" content="website" />
+<!-- end open graph metatags -->
+<title>Fundaztic P2P</title>
+<script>
+// TRANSLATION STARTS
+	// common
+	var t_ok = "OK";
+	var t_cancel = "Cancel";
+	var t_login = "Login";
+	var t_error = "Error";
+	var t_info = "Information";
+	var t_warn = "Warning";
+	var t_success = "Successful";
+	var t_confirm = "Confirmation";
+	var t_yes = "Yes";
+	var t_no = "No";
+	var t_time = "Time";</script>
+<link rel="stylesheet"
+	href="https://p2p.fundaztic.com:443/resources/css/validationEngine.jquery.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/base.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/login.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/login.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/index_page.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/select.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/skin/simple_gray/ymPrompt.css" />
+
+<!-- Add this part (css) -->
+	<style type="text/css">
+
+	*,
+	*::before,
+	*::after {
+	  box-sizing: border-box;
+	}
+	/* --- */
+	.video-link {
+	  display: block;
+	  padding: 5px 10px;
+	  border-radius: 4px;
+	  text-decoration: none;
+		text-align: center;
+	  color: #fff;
+	  background-color: #D91E18;
+	  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.5);
+		width: 200px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	/* --- */
+	.player {
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: #000000;
+	  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, #000000 100%);
+	  background: radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, #000000 100%);
+	  opacity: 0;
+	  -webkit-transition: opacity 0.3s ease-in-out;
+	  transition: opacity 0.3s ease-in-out;
+	}
+	.player__video {
+	  position: relative;
+	  top: 50%;
+	  left: 50%;
+	  width: auto;
+	  max-width: 75%;
+	  background-color: #fff;
+	  box-shadow: 0 0 50px rgba(0, 0, 0, 0.95);
+	  -webkit-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.js--show-video {
+	  opacity: 1;
+	}
+	.video-filler {
+	  display: block;
+	  width: 100%;
+	}
+	.video-close {
+	  position: absolute;
+	  z-index: 0;
+	  top: 0;
+	  right: -30px;
+	  padding: 5px 10px;
+	  border: none;
+	  outline: none;
+	  border-radius: 0 50% 50% 0;
+	  cursor: pointer;
+	  font-size: 24px;
+	  color: #000;
+	  background-color: #fff;
+	  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+	}
+	.video-iframe {
+	  position: absolute;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border: 10px solid #fff;
+	}
+
+	</style>
+	<!-- End Add this part (css) -->
+
+<script>
+// TRANSLATION STARTS
+	// common
+	var t_ok = "OK";
+	var t_cancel = "Cancel";
+	var t_login = "Login";
+	var t_error = "Error";
+	var t_info = "Information";
+	var t_warn = "Warning";
+	var t_success = "Successful";
+	var t_confirm = "Confirmation";
+	var t_yes = "Yes";
+	var t_no = "No";
+	var t_time = "Time";</script>
+<script type="text/javascript"
+	src="https://p2p.fundaztic.com:443/resources/js/ymPrompt.js"></script>
+<script type="text/javascript"
+	src="https://p2p.fundaztic.com:443/resources/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="https://p2p.fundaztic.com:443/resources/js/global.js"></script>
+<script type="text/javascript"
+	src="https://p2p.fundaztic.com:443/resources/js/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="https://p2p.fundaztic.com:443/resources/js/jquery.validationEngine-en_US.js"></script>
+	<script type="text/javascript" src="https://p2p.fundaztic.com:443/resources/js/login.js"></script>
+<script>
+	$(function() {
+		var regisType = "";
+		if (regisType == '1') {
+			$("#business_div").show();
+			$("#individual_div").hide();
+			$("input[name='regisType'][value=1]").attr("checked", true);
+		}
+		var old = $("input[name='regisType']").val();
+		$("input[name='regisType']").click(function() {
+			var f = $(this).val();
+			if(old == f){
+				return;
+			}
+			old = f;
+			if (f == 0) {
+				$("#business_div").hide();
+				$("#individual_div").show();
+				$("#changeCode0").attr("src",'/cic/code?name=user_regist&time='+new Date());
+				//$("input[name='regisType'][value=0]").attr("checked",true);
+				$("#regisTypeI").attr("checked", true);
+			} else if (f == 1) {
+				$("#business_div").show();
+				$("#individual_div").hide();
+				$("#changeCode1").attr("src",'/cic/code?name=user_regist&time='+new Date());
+				//$("input[name='regisType'][value=1]").attr("checked",true);
+				$("#regisTypeB").attr("checked", true);
+			}
+		});
+	});
+
+	function fn_ajax(_url, _param, _callback) {
+		$.ajax({
+			url : _url,
+			type : "post",
+			data : _param,
+			contentType : "application/x-www-form-urlencoded;charset=utf-8",
+			success : function(_msg) {
+				if (_callback) {
+					_callback(_msg);
+				}
+			}
+		});
+	}
+
+	function checkParam() {
+		$("#jmErLi").hide();
+		$("#jmErMsg").html("");
+		var cardId = $("input[name='cardId']").val();
+		var identityType = $("select[name='identityType']").val();
+		if (cardId == '' || identityType == '') {
+			return false;
+		}
+		if (cardId.length > 20) {
+			$("#jmErLi").show();
+			$("#jmErMsg").html("Invalid identity No.");
+		}
+
+		//如果是身份证需要校验年龄
+		if (identityType == 'MyKad') {
+			if(cardId.length != 12){
+				$("#jmErLi").show();
+				$("#jmErMsg").html("Invalid identity No.");
+				return false;
+			}
+			var bid = cardId.substr(0, 6);
+			if (isNaN(bid)) {
+				$("#jmErLi").show();
+				$("#jmErMsg").html("Invalid identity No.");
+				return false;
+			}
+			var year = cardId.substr(0, 2);
+			var month = cardId.substr(2, 2);
+			var day = cardId.substr(4, 2);
+
+			var date = new Date();
+
+			if (year > 30) {
+				year = Number(year) + 1900;
+			} else {
+				year = Number(year) + 2000;
+			}
+
+			if (Number(date.getFullYear()) - Number(year) < 21) {
+				$("#jmErLi").show();
+				$("#jmErMsg").html("You must be of 21 years and above");
+				return false;
+			}
+
+			if (Number(date.getFullYear()) - Number(year) >= 100) {
+				$("#jmErLi").show();
+				$("#jmErMsg").html("You must not be more than 100 years old");
+			}
+
+			if (month > 12 || month == 00) {
+				$("#jmErLi").show();
+				$("#jmErMsg").html("Invalid identity No.");
+				return false;
+			}
+			if (day > 31 || day == 00) {
+				$("#jmErLi").show();
+				$("#jmErMsg").html("Invalid identity No.");
+				return false;
+			}
+			if(month=='04'||month=='06'||month=='09'||month=='11'){
+				if(day>30){
+					$("#jmErLi").show();
+					$("#jmErMsg").html("Invalid identity No.");
+					return false;
+				}
+			}
+			if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+				if(month == 02){
+					if(day > 29){
+						$("#jmErLi").show();
+						$("#jmErMsg").html("Invalid identity No.");
+						return false;
+					}
+				}
+			}else{
+				if(month == 02){
+					if(day > 28){
+						$("#jmErLi").show();
+						$("#jmErMsg").html("Invalid identity No.");
+						return false;
+					}
+				}
+			}
+		}
+
+		//验证邮箱
+		var a = /^([a-zA-Z0-9]+[_|\-|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+		if (!a.test($("input[name='userName']").val())) {
+			$("#jmErLi").show();
+			$("#jmErMsg").html("Invalid Email");
+			return false;
+		}
+
+		//验证密码
+		var pwd = $("#password").val();
+		var checkispwd= /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{7,20}$/;
+		if (!checkispwd.test(pwd)) {
+			$("#jmErLi").show();
+			$("#jmErMsg")
+					.html(
+							"Password can only contain alpha-numeric characters and must contain one letter, one number and be at least 7 characters long");
+			return false;
+		}
+		var flag = true;
+		//参数验证
+		$(function() {
+			$.ajax({
+				type : "POST",
+				url : "registration/registcheck",
+				data : $('#df_rigster').serialize(),
+				dataType : "json",
+				async: false,
+				success : function(dataMap)
+				 {
+					var msg = dataMap;
+					var html = "";
+					$("#petip").html("");
+					if(msg == 2)
+					{
+					 html = "<font style='color: red;'>Incomplete Data Entry</font>";
+					 $("#petip").append(html);
+					 $("#remin_msg").show();
+					 flag  =  false;
+					}
+					if(msg == 1)
+						{
+						  html = "<font style='color: red;'>The email address or other credentials has been registered</font>";
+						  $("#petip").append(html);
+						  $("#remin_msg").show();
+						  flag  =  false;
+
+						}
+					if(msg == 3)
+					{
+						 html = "<font style='color: red;'>authentication failure of personal information, the Identity No. has been certified</font>";
+						 $("#petip").append(html);
+						 $("#remin_msg").show();
+						 flag  =  false;
+					}
+					if(msg == 6)
+					{
+						 html = "<font style='color: red;'>Referral Code is Incorrect</font>";
+						 $("#petip").append(html);
+						 $("#remin_msg").show();
+						 flag  =  false;
+					}
+				},
+			});
+		});
+
+		return flag;
+	}
+
+	function checkParam2() {
+		//var cardId = $("input[name='cardId']").val();
+		var a = /^([a-zA-Z0-9]+[_|\-|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+		//验证邮箱
+		if (!a.test($("#userName_").val())) {
+			$("#jmErLi_").show();
+			$("#jmErMsg_").html("Invalid Email");
+			return false;
+		}
+		//验证密码
+		var pwd = $("#password1").val();
+		var checkispwd= /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{7,20}$/;
+		if (!checkispwd.test(pwd)) {
+			$("#jmErLi_").show();
+			$("#jmErMsg_")
+					.html(
+							"Password can only contain alpha-numeric characters and must contain one letter, one number and be at least 7 characters long");
+			return false;
+		}
+		//验证企业注册号
+		var license = $("input[name='license']").val();
+		if (license == "") {
+			$("#jmErLi_").show();
+			$("#jmErMsg_").html("Business Registration No. required");
+			return false;
+		}
+		var flag = true;
+		//参数验证
+		$(function() {
+			$.ajax({
+				type : "POST",
+				url : "registration/registcheck",
+				data : $('#df_rigster2').serialize(),
+				dataType : "json",
+				async: false,
+				success : function(dataMap)
+				 {
+					var msg = dataMap;
+					var html = "";
+					$("#petip1").html("");
+
+					if(msg == 2)
+					{
+					 html = "<font style='color: red;'>Incomplete Data Entry</font>";
+					 $("#petip1").append(html);
+					 $("#remin_msg1").show();
+					 flag  =  false;
+					}
+				if(msg == 1)
+					{
+					  html = "<font style='color: red;'>The email address or other credentials has been registered</font>";
+					  $("#petip1").append(html);
+					  $("#remin_msg1").show();
+					  flag  =  false;
+					}
+				if(msg == 3)
+				{
+					 html = "<font style='color: red;'>authentication failure of personal information, the Identity No. has been certified</font>";
+					 $("#petip1").append(html);
+					 $("#remin_msg1").show();
+					 flag  =  false;
+				}
+				if(msg == 4)
+				{
+					 html = "<font style='color: red;'>Enterprise registration No. has been certified</font>";
+					 $("#petip1").append(html);
+					 $("#remin_msg1").show();
+					 flag  =  false;
+				}
+				if(msg == 5)
+				{
+					 html = "<font style='color: red;'>The company name has been registered</font>";
+					 $("#petip1").append(html);
+					 $("#remin_msg1").show();
+					 flag  =  false;
+				}
+				if(msg == 6)
+				{
+					 html = "<font style='color: red;'>Referral Code is Incorrect</font>";
+					 $("#petip1").append(html);
+					 $("#remin_msg1").show();
+					 flag  =  false;
+				}
+				},
+			});
+		});
+
+		return flag;
+	}
+
+	// 获取cookie
+	function getCookie(name) {
+		var arr = document.cookie.split("; ");
+		for (var i = 0; i < arr.length; i++) {
+			var item = arr[i].split("=");
+			if (item[0] == name) {
+				$("#__code").val(item[1]);
+				break;
+			}
+		}
+		// return "";
+	}
+	setTimeout("getCookie('__code')", 1000);
+	$(function() {
+		$.ajax({
+			type : "POST",
+			url : "/pulldownOption/getPulldownGroup",
+			data : "name=identityType",
+			dataType : "json",
+			success : function(dataMap) {
+				var fieldList = dataMap.dataMap;
+				if (fieldList != null && fieldList.length > 0) {
+					$("#identityType").append("<option value=''>Please Select</option>");
+					for (var j = 0; j < fieldList.length; j++) {
+						for (key in fieldList[j]) {
+							$("#identityType").append(
+									"<option value='"+key+"'>"
+											+ fieldList[j][key] + "</option>");
+						}
+					}
+				}
+				checkIdType();
+			},
+		});
+	});
+	//文本框只能输入数字，并屏蔽输入法和粘贴
+	$.fn.numeral = function() {
+		$(this).css("ime-mode", "disabled");
+		this.bind("keypress", function(e) {
+			var code = (e.keyCode ? e.keyCode : e.which); //兼容火狐 IE
+			if(!$.browser.msie && (e.keyCode == 0x8)) //火狐下不能使用退格键
+			{
+				return;
+			}
+			return code >= 48 && code <= 57;
+		});
+		this.bind("blur", function() {
+			if(this.value.lastIndexOf(".") == (this.value.length - 1)) {
+				this.value = this.value.substr(0, this.value.length - 1);
+			} else if(isNaN(this.value)) {
+				this.value = "";
+			}
+		});
+		this.bind("paste", function() {
+			var s = clipboardData.getData('text');
+			if(!/\D/.test(s));
+			value = s.replace(/^0*/, '');
+			return false;
+		});
+		this.bind("dragenter", function() {
+			return false;
+		});
+		this.bind("keyup", function() {
+			/*if(/(^0+)/.test(this.value)) {
+				this.value = this.value.replace(/^0*//*, '');
+			}*/
+		});
+	};
+	function  checkIdType() {
+		if($("#identityType").val()=='MyKad'){
+			$("input[name='cardId']").numeral();
+		}
+		else{
+			var cardIdInput='<input type="text" name="cardId" class="loginTx validate[required,maxSize[12]]" value="" maxlength="12"/>';
+			$("#cardid-p").html(cardIdInput);
+		}
+	}
+	checkIdType();
+</script>
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<!-- Start of Async Drift Code
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('nczhdfc29a33');
+</script>-->
+<!-- Start of neilcorps Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="neilcorps.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
+/*]]>*/</script>
+<!-- End of neilcorps Zendesk Widget script -->
+<!-- End of Async Drift Code -->
+</head>
+<body>
+	<!--head-->
+	<div class="loginhead">
+		<div class="w960px pot_r">
+			<a href="https://p2p.fundaztic.com:443/" class="loginLogo"><img
+				src="https://p2p.fundaztic.com:443/resources/images/logo.png" alt=""
+				title="Fundaztic P2P" /></a>
+			<div class="registerheadRtBox">
+				<a href="https://p2p.fundaztic.com:443/visitor/to-login" class="btn-register-login">Login</a>
+			</div>
+		</div>
+	</div>
+	<!--End head-->
+
+	<!--Content个人-->
+	<div id="individual_div" class="loginContent registBg">
+		<div class="w960px loginBox">
+			<!-- Add this part -->
+			<div>
+			<a class="video-link" href="https://www.youtube.com/embed/bwBxsvPeEJA?html5=1" data-width="1920" data-height="1080">How to register?</a>
+			</div>
+			<script>
+			var $iframe = $('iframe'),
+					$videoLink = $('.video-link'),
+					playerTemplate = '<div class="player"><div class="player__video"><div class="video-filler"></div><button class="video-close">&times;</button><iframe class="video-iframe" src="{{iframevideo}}" frameborder="0" allowfullscreen></iframe></div><div/>';
+
+
+			$videoLink.on('click', function(e) {
+					var localTemplate = '',
+							videoWidth = parseInt($(this).data('width')),
+							videoHeight = parseInt($(this).data('height')),
+							videoAspect = ( videoHeight / videoWidth ) * 100,
+							// elements
+							$player = null,
+							$video = null,
+							$close = null,
+							$iframe = null;
+
+					e.preventDefault();
+
+					localTemplate = playerTemplate.replace('{{iframevideo}}', $(this).prop('href'));
+
+					$player = $(localTemplate);
+
+					$player
+							.find('.video-filler')
+							.css('padding-top', videoAspect + '%');
+
+					$close = $player
+							.find('.video-close')
+							.on('click', function() {
+									$(this).off().closest('.player').hide().remove();
+							});
+
+					$player.appendTo('body').addClass('js--show-video');
+			});
+			</script>
+			<!-- End Add this part -->
+			<div class="registRight">
+				<form id="df_rigster"
+					action="https://p2p.fundaztic.com:443/registration/registration_1_htm" method="post"
+					onsubmit="return checkParam()">
+					<input id="__code" name="__code" type="hidden" />
+					<ul>
+						<li>
+							<h1>
+								Customer Type
+								：
+							</h1>
+							<p>
+								<span class="mr100"><input type="radio" class="check_o"
+									name="regisType" value="0" checked="checked" id="regisTypeI" />
+								Individual
+									&nbsp;&nbsp;</span><span><input type="radio" class="check_o"
+									name="regisType" value="1" />
+								Business</span>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Email
+								：
+							</h1>
+							<p>
+								<input type="text" name="userName"
+									class="loginTx validate[required ,custom[email]]"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Identity Type
+								：
+							</h1>
+							<p>
+								<div class="form-icon-container ">
+									<select id="identityType" name="identityType"
+										class="form-control validate[required]" onchange="checkIdType()">
+									</select> <span class="form-icon icon icon-option-arrows"></span>
+								</div>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Identity No.
+								：
+							</h1>
+							<p id="cardid-p">
+								<input type="text" name="cardId"
+									class="loginTx validate[required,maxSize[12]]"
+									value="" maxlength="12"/>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Name as in Identification Card
+								：
+							</h1>
+							<p>
+								<input type="text" name="name"
+									class="loginTx validate[required,maxSize[200]]"
+									value="" maxlength="200"/>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Password
+								：
+							</h1>
+							<p>
+								<input type="password" name="pwd" id="password"
+									class="loginTx validate[required,maxSize[20],minSize[7]]" maxlength="20"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Confirm Password
+								：
+							</h1>
+							<p>
+								<input type="password"
+									class="loginTx validate[required,maxSize[20],equals[password],minSize[7]]" maxlength="20"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Referral Code
+								：
+							</h1>
+							<p>
+								<input type="text" name="ycode" id="ycode" class="loginTx"
+									value="" maxlength="10"/>
+							</p>
+						</li>
+						<li>
+							<li>
+							<h1>Verification code：</h1>
+							<p>
+								<input type="text" name="captcha" class="loginVftx validate[required,maxSize[4],minSize[4]]">
+									<span class="loginVfImg"> <img id="changeCode0" src="/cic/code?name=user_regist" onclick="this.src='/cic/code?name=user_regist&amp;id='+new Date();" title="Reissue " style="cursor: pointer;">
+									</span>
+							</p>
+						</li>
+						</li>
+						<li  id="remin_msg" style="display: none;">
+							<h1></h1>
+							<p id="petip">
+								</p>
+						</li>
+						<li id="jmErLi" style="display: none;">
+							<p>
+								<font style="color: red;" id="jmErMsg"></font>
+							</p>
+						</li>
+						<li>
+							<h1></h1>
+							<p>
+								<input type="submit"
+									value="Submit"
+									class="registerBnt registW" /> <input type="reset"
+									value="Reset"
+									class="registerBnt registW grayBg" onclick="fnreset()"/>
+							</p>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!--Content企业-->
+	<div id="business_div" class="loginContent registBg"
+		style="display: none">
+		<div class="w960px loginBox">
+			<div class="registRight">
+				<form id="df_rigster2"
+					action="https://p2p.fundaztic.com:443/registration/registration_1_htm" method="post"
+					onsubmit="return checkParam2()">
+					<input id="__code" name="__code" type="hidden" />
+					<ul>
+						<li>
+							<h1>
+								Customer Type
+								：
+							</h1>
+							<p>
+								<span class="mr100"><input type="radio" class="check_o"
+									name="regisType" value="0" />
+								Individual
+									&nbsp;&nbsp; </span><span></span><input type="radio" class="check_o"
+									name="regisType" value="1" checked="checked" id="regisTypeB" />
+								Business</span>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Email
+								：
+							</h1>
+							<p>
+								<input type="text" id="userName_" name="userName"
+									class="loginTx validate[required ,custom[email]]"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Business Registration No. (as registered with SSM)
+								：
+							</h1>
+							<p>
+								<input type="text" name="license"
+									class="loginTx validate[required,maxSize[100]]" value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Registration in Sabah/Sarawak
+								：
+							</h1>
+							<p>
+								<span class="mr100"><input type="radio" class="check_o"
+									name="isSabahOrSarawak" value="0" checked="checked" />
+								No &nbsp;&nbsp;</span><span><input
+									type="radio" class="check_o" name="isSabahOrSarawak" value="1" />
+								Yes</span>
+							</p>
+						</li>
+						<li>
+							<h1>
+								Company Name as registered with SSM
+								：
+							</h1>
+							<p>
+								<input type="text" name="enterpriseName"
+									class="loginTx validate[required,maxSize[100]]" value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Password
+								：
+							</h1>
+							<p>
+								<input type="password" name="pwd" id="password1"
+									class="loginTx validate[required,maxSize[20],minSize[7]]"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Confirm Password
+								：
+							</h1>
+							<p>
+								<input type="password"
+									class="loginTx validate[required,maxSize[20],equals[password1],minSize[7]]"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>
+								Referral Code
+								：
+							</h1>
+							<p>
+								<input type="text" name="ycode" id="ycode" class="loginTx"
+									value="" />
+							</p>
+						</li>
+						<li>
+							<h1>Verification code：</h1>
+							<p>
+								<input type="text" name="captcha" class="loginVftx validate[required,maxSize[4],minSize[4]]">
+									<span class="loginVfImg"> <img id="changeCode1" src="/cic/code?name=user_regist" onclick="this.src='/cic/code?name=user_regist&amp;id='+new Date();" title="Reissue " style="cursor: pointer;">
+									</span>
+							</p>
+						</li>
+						<li>
+							<h1></h1>
+							<p></p>
+						</li>
+						<li>
+							<h1></h1>
+							<p></p>
+						</li>
+						<li id="remin_msg1" style="display: none;">
+							<h1></h1>
+							<p id="petip1">
+								</p>
+						</li>
+						<li id="jmErLi_" style="display: none;">
+							<p>
+								<font style="color: red;" id="jmErMsg_"></font>
+							</p>
+						</li>
+						<li>
+							<h1></h1>
+							<p>
+								<input type="submit"
+									value="Submit"
+									class="registerBnt registW"  />
+							    <input type="reset" value="Reset" class="registerBnt registW grayBg" onclick="fnreset1()"/>
+							</p>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<!--End Content-->
+	<!--footer-->
+	<script type="text/javascript">
+$(document).ready(function(){
+});
+</script>
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/index.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://p2p.fundaztic.com:443/resources/css/style.css" />
+<div class="clear"></div>
+<script type="text/javascript"
+	src="https://p2p.fundaztic.com:443/resources/js/jquery.Sonline.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="/resources/css/default_blue.css" />
+<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+<footer>
+	<div class="footer-container">
+		<div class="footer-logo"><a href="https://www.fundaztic.com"><img src="/resources/images/logo-wht.png" alt="Fundaztic"></a></div>
+		<div class="footer-nav">
+			<ul>
+				<li><h4>For Business</h4>
+					<ul>
+						<li><a href="/borrow/applyBorrow.htm">Get Funds</a></li>
+						<li><a href="https://www.fundaztic.com/issuer-fees-and-charges">Fees and Charges</a></li>
+						<li><a href="https://www.fundaztic.com/issuer-terms">Issuer Terms</a></li>
+						<li><a href="https://www.fundaztic.com/resource-centre">Resource Centre</a></li>
+					</ul>
+				</li>
+				<li><h4>Investors</h4>
+					<ul>
+						<li><a href="/loaninfo/openLoan.htm?topicId=2">Invest</a></li>
+						<li><a href="https://www.fundaztic.com/investor-fees-and-charges">Fees and Charges</a></li>
+						<li><a href="https://www.fundaztic.com/investor-terms">Investor Terms</a></li>
+						<li><a href="https://www.fundaztic.com/risk-profiling">Risk Profiling</a></li>
+					</ul>
+				</li>
+				<li><h4>About Us</h4>
+					<ul>
+						<li><a href="https://www.fundaztic.com/about-us" id="init-mixpanel">About Fundaztic</a></li>
+						<li><a href="https://www.fundaztic.com/leadership">Leadership</a></li>
+						<li><a href="https://www.fundaztic.com/in-the-news">In The News</a></li>
+					</ul>
+				</li>
+				<li><h4>Help</h4>
+					<ul>
+						<li><a href="https://www.fundaztic.com/faqs">FAQs</a></li>
+						<li><a href="https://www.fundaztic.com/terms-of-use">Terms of Use</a></li>
+						<li><a href="https://www.fundaztic.com/privacy-notice">Privacy Notice</a></li>
+						<li><a href="https://www.fundaztic.com/contact-us">Contact Us</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<a href="/generalize/get_promote_links" style="color:#777779"><h4 style="float: left;">Refer A Friend</h4></a>
+		</div>
+
+		<div class="footer-social">
+			<a href="https://www.facebook.com/fundaztic/" target="_blank"><img onmouseover="this.src='https://p2p.fundaztic.com/resources/images/fb-blue.png'" onmouseout="this.src='https://p2p.fundaztic.com/resources/images/fb-gray.png'" src="https://p2p.fundaztic.com/resources/images/fb-gray.png" alt="fb link"></a>
+			<a href="https://www.youtube.com/watch?v=uJ2sB3YirdQ" target="_blank"><img onmouseover="this.src='https://p2p.fundaztic.com/resources/images/youtube-red.png'" onmouseout="this.src='https://p2p.fundaztic.com/resources/images/youtube-gray.png'" src="https://p2p.fundaztic.com/resources/images/youtube-gray.png" alt="youtube link"></a>
+			<a href="https://www.linkedin.com/company/fundaztic" target="_blank"><img onmouseover="this.src='https://p2p.fundaztic.com/resources/images/linkedin-blue.png'" onmouseout="this.src='https://p2p.fundaztic.com/resources/images/linkedin-gray.png'" src="https://p2p.fundaztic.com/resources/images/linkedin-gray.png" alt="linkedin link"></a>
+		</div>
+
+		<hr class="footer-sep">
+		<div class="footer-nav2"></div>
+		<div class="footer-copyright">Copyright © 2017 Peoplender Sdn Bhd. All Rights Reserved.</div>
+		<div class="clearfloat"></div>
+	</div>
+	<script>
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if (isMobile) {
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/loaninfo/openLoan.htm") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileLoan/loans";
+		}
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/visitor/to-login") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileVisitor/to-login";
+		}
+		if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/visitor/to-regist") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileRegistration/to-regist";
+		}
+		if (window.location.href.toString().indexOf("https://issuer001.github.io") != -1) {
+			window.location.href = "https://p2p.fundaztic.com/mobileRegistration/to-regist";
+		}
+	} else {
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileLoan/loans") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/loaninfo/openLoan.htm";
+    }
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileVisitor/to-login") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/visitor/to-login";
+    }
+    if (window.location.href.toString().indexOf("https://p2p.fundaztic.com/mobileRegistration/to-regist") != -1) {
+      window.location.href = "https://p2p.fundaztic.com/visitor/to-regist";
+    }
+  }
+	</script>
+</footer>
+<script type="text/javascript">
+	$(function($) {
+		/*$("#wecat")
+				.click(
+						function() {
+							ymPrompt
+									.win(
+											"<div align='center' ><img alt='亿好金服网贷平台二维码' src='/resources/images/weixin.jpg' width='320' height='320'></div>",
+											350, 360, 'Micro letter brushed myself a concerned');
+						});*/
+		/* $("body").Sonline({
+			Position:"right",//left或right
+			Top:200,//顶部距离，默认200px
+			Effect:true, //滚动或者固定两种方式，布尔值：true或false
+			DefaultsOpen:true, //默认展开：true,默认收缩：false
+			Qqlist:"3267360023|客服01,2044827414|客服02,3033860053|客服03" //多个QQ用','隔开，QQ和客服名用'|'隔开
+		}); */
+	});
+
+// 	var _hmt = _hmt || [];
+// 	(function() {
+// 	  var hm = document.createElement("script");
+// 	  hm.src = "https://hm.baidu.com/hm.js?aa3b2052d12dbd21e7d5b0b3efcdcdb3";
+// 	  var s = document.getElementsByTagName("script")[0];
+// 	  s.parentNode.insertBefore(hm, s);
+// 	})();
+
+$("#init-mixpanel").click(function() { mixpanel.track("init-mixpanel"); });
+</script>
+<!--End footer--><!--End footer-->
+</body>
+<script language="javascript">
+function fnreset(){
+	$("#jmErLi").hide();
+	$("#jmErMsg").html("");
+	$("#remin_msg").hide();
+}
+function fnreset1(){
+	$("#jmErLi_").hide();
+	$("#jmErMsg_").html("");
+	$("#remin_msg1").hide();
+}
+	function openWin(htmUrl) {
+		var url = htmUrl; //要打开的窗口
+		var winName = "newWin"; //给打开的窗口命名
+		// screen.availWidth 获得屏幕宽度
+		// screen.availHeight 获得屏幕高度
+		// 居中的算法是：
+		// 左右居中： (屏幕宽度-窗口宽度)/2
+		// 上下居中： (屏幕高度-窗口高度)/2
+		var awidth = 765; //窗口宽度,需要设置
+		var aheight = 800;//窗口高度,需要设置
+		var atop = 100;//窗口顶部位置,一般不需要改
+		var aleft = 100;//窗口放中央,一般不需要改
+		var param0 = "scrollbars=yes,status=0,menubar=0,resizable=2,location=0"; //新窗口的参数
+		//新窗口的左部位置，顶部位置，宽度，高度
+		var params = "top=" + atop + ",left=" + aleft + ",width=" + awidth
+				+ ",height=" + aheight + "," + param0;
+		win = window.open(url, winName, params); //打开新窗口
+		win.focus(); //新窗口获得焦点
+	}
+</script>
+<script>
+//Add this script to registration page at the bottom right before </html> tag
+//cookie to track affialiate links
+/************************ -------------------------- *******************************/
+//YOUR VARIABLES - SET THESE!
+
+//this is the name of the cookie on the users machine
+var cookieName = "FundazticCookie",
+//the name of the url paramater you are expecting that holds the code you wish to capture
+//for example, http://www.test.com?affCode=BIGDISCOUNT your URL Parameter would be affCode and the
+//cookie value that will be stored is BIGDISCOUNT
+URLParameterName = "affCode",
+//how many days you want the cookie to be valid for on the users machine
+cookiePersistDays = 7,
+cookiePath = '',    // use '' for default
+cookieDomain = "."+window.location.hostname, // leading . will allow subdomains to also access cookie
+cookieSecure = true;
+
+/************************ -------------------------- *******************************/
+//Cookie Functions
+function createCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    var cookie_string = name + "=" + value + expires;
+    //document.cookie =  + "; path=/";
+    cookie_string += "; path=" + (cookiePath.length ? cookiePath : '/');
+    cookie_string += "; domain=" + (cookieDomain.length ? cookieDomain : window.location.hostname);
+    if ( cookieSecure ) {
+        cookie_string += "; secure";
+    }
+    document.cookie = cookie_string;
+}
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') { c = c.substring(1, c.length); }
+        if (c.indexOf(nameEQ) === 0) { return c.substring(nameEQ.length, c.length);}
+    }
+    return null;
+}
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+/************************ -------------------------- *******************************/
+// HTML Encode Functions
+function encode(me) {
+    return me.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function decode(me) {
+    return me.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+}
+/************************ -------------------------- *******************************/
+//helper function to trim whitespace
+function trim(str) {
+    if (str === null) { return ""; }
+    var newstr;
+    newstr = str.replace(/^\s*/, "").replace(/\s*$/, "");
+    newstr = newstr.replace(/\s{2,}/, " ");
+    return newstr;
+}
+//Retrieve a query string parameter
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.href);
+    if (results === null) {
+        return "";
+    } else {
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+}
+
+/************************ -------------------------- *******************************/
+//Extract the code from the URL based on the defined parameter name
+function CaptureCode() {
+    var q = getParameterByName(URLParameterName);
+    if (q !== null && q !== "") {
+        eraseCookie(cookieName);
+        createCookie(cookieName, q, cookiePersistDays);
+
+				var els=document.getElementsByName("ycode");
+				for (var i=0;i<els.length;i++) {
+					els[i].value = GetCode();
+					els[i].defaultValue = GetCode();
+				}
+    }
+		if (GetCode() !== null && GetCode() !== ""){
+			var els=document.getElementsByName("ycode");
+			for (var i=0;i<els.length;i++) {
+				els[i].value = GetCode();
+				els[i].defaultValue = GetCode();
+			}
+		}
+}
+//Save a code from an action, not a URL, using the defined variables
+function SaveCode(code) {
+    if (code !== null && code !== "") {
+        eraseCookie(cookieName);
+        createCookie(cookieName, code, cookiePersistDays);
+    }
+}
+//Save a code overriding the default variables
+function SaveCodeManually(_cookieName, _code, _persistDays) {
+    if (_cookieName !== null && _cookieName !== "" && _code !== null && _code !== "") {
+        eraseCookie(_cookieName);
+        createCookie(_cookieName, _code, _persistDays);
+    }
+}
+//This will return the stored cookie value
+function GetCode() {
+    return readCookie(cookieName);
+}
+//This will return the stored cookie value from the specified cookie name
+function GetCodeByName(_cookieName) {
+    return readCookie(_cookieName);
+}
+
+/************************ -------------------------- *******************************/
+//RUN ON LOAD
+CaptureCode();
+</script>
+
+
+<h2>Firebase Example</h2>
+    <input type='text' id='messageInput'  placeholder='Enter your data here...'>
+    <button type="button" onclick="savedata()">Save Data</button>
+    <br><br><br>
+    <hr>
+    <h2>Results</h2>
+    <textarea rows="10" cols="50" id="results"></textarea>
+    <script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCPy5NbnwkPJS6_h39YJ8MwEAyctS8ir2Y",
+			authDomain: "fundaztic-affiliate-tracking.firebaseapp.com",
+			databaseURL: "https://fundaztic-affiliate-tracking.firebaseio.com",
+			projectId: "fundaztic-affiliate-tracking",
+			storageBucket: "",
+			messagingSenderId: "542760776745"
+		};
+		firebase.initializeApp(config);
+    var messagesRef = new Firebase('https://fundaztic-affiliate-tracking.firebaseio.com');
+
+    var messageField = document.getElementById('messageInput');
+    var messageResults = document.getElementById('results');
+    // Save data to firebase
+    function savedata(){
+      var message = messageField.value;
+      messagesRef.push({fieldName:'messageField', text:message});
+      messageField.value = '';
+    }
+    // Update results when data is added
+    messagesRef.limitToLast(10).on('child_added', function (snapshot) {
+        var data = snapshot.val();
+        console.log(snapshot.val());
+        var message = data.text;
+        if (message != undefined)
+        {
+          messageResults.value += '\n' + message;
+        }
+    });
+    </script>
+</html>
