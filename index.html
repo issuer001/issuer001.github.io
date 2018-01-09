@@ -112,7 +112,8 @@ ga('send', 'pageview');
   // listen to an Event
   $(document).bind('fbInit',function(){
       console.log('fbInit complete; FB Object is Available');
-      $('div.fb_dialog.fb_dialog_advanced.fb_shrink_active').remove();
+      $('.fb_dialog').remove();
+      alert("dialog removed");
   });
 
   window.fbAsyncInit = function() {
