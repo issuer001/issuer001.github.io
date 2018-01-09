@@ -109,6 +109,7 @@ ga('send', 'pageview');
 <body class="main" id="mainBody">
 <!-- messenger -->
 <script>
+  /*
   function wait(ms){
      var start = new Date().getTime();
      var end = start;
@@ -116,14 +117,13 @@ ga('send', 'pageview');
        end = new Date().getTime();
     }
   }
-  // listen to an Event
   $(document).bind('fbInit',function(){
       console.log('fbInit complete; FB Object is Available');
       wait(3000);
       $('.fb_dialog').remove();
       alert("dialog removed");
   });
-
+  */
   window.fbAsyncInit = function() {
     FB.init({
       appId            : '179805622766539',
@@ -131,7 +131,7 @@ ga('send', 'pageview');
       xfbml            : true,
       version          : 'v2.11'
     });
-     $(document).trigger('fbInit'); // trigger event 
+     //$(document).trigger('fbInit'); // trigger event 
   };
 
   (function(d, s, id){
@@ -146,10 +146,12 @@ ga('send', 'pageview');
 <!-- end messenger -->
 
 <!-- messenger html -->
+<div style="bottom:100pt">
 <div class="fb-customerchat"
   page_id="1835660406658147"
   ref="messaging_referrals"
   minimized="false">
+</div>
 </div>
 <!-- end messenger html -->
 <!-- Creme Digital Google Tag Manager (noscript) -->
