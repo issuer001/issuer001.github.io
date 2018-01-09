@@ -109,9 +109,17 @@ ga('send', 'pageview');
 <body class="main" id="mainBody">
 <!-- messenger -->
 <script>
+  function wait(ms){
+     var start = new Date().getTime();
+     var end = start;
+     while(end < start + ms) {
+       end = new Date().getTime();
+    }
+  }
   // listen to an Event
   $(document).bind('fbInit',function(){
       console.log('fbInit complete; FB Object is Available');
+      wait(3000);
       $('.fb_dialog').remove();
       alert("dialog removed");
   });
