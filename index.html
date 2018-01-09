@@ -325,7 +325,12 @@ ga('send', 'pageview');
   <div id="positionFB">
   </div>
   <script>
+  function sleep(delay) {
+        var start = new Date().getTime();
+        while (new Date().getTime() < start + delay);
+      }
   jQuery(document).ready(function() {
+    sleep(5000);
     if (document.getElementById("fb-root")) {
       var css = document.createElement("style");
       css.type = "text/css";
