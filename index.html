@@ -109,6 +109,12 @@ ga('send', 'pageview');
 <body class="main" id="mainBody">
 <!-- messenger -->
 <script>
+  // listen to an Event
+  $(document).bind('fbInit',function(){
+      console.log('fbInit complete; FB Object is Available');
+      $('.fb_dialog.fb_dialog_advanced.fb_shrink_active').remove();
+  });
+
   window.fbAsyncInit = function() {
     FB.init({
       appId            : '179805622766539',
@@ -116,7 +122,7 @@ ga('send', 'pageview');
       xfbml            : true,
       version          : 'v2.11'
     });
-     //$('.fb_dialog.fb_dialog_advanced.fb_shrink_active').remove();
+     $(document).trigger('fbInit'); // trigger event 
   };
 
   (function(d, s, id){
@@ -125,8 +131,7 @@ ga('send', 'pageview');
      js = d.createElement(s); js.id = id;
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
-     d.write('<h1>helloworld</h1>');
-      //d.write('<style> .fb_dialog.fb_dialog_advanced.fb_shrink_active { background: none; border-radius: 50%; bottom: 48pt; box-shadow: rgba(0, 0, 0, 0.15) 0px 3pt 12pt; display: inline; height: 45pt; padding: 0px; position: fixed; right: 18pt; top: auto; width: 45pt; z-index: 2147483646; } </style>');
+     //d.write('<style> .fb_dialog.fb_dialog_advanced.fb_shrink_active { background: none; border-radius: 50%; bottom: 48pt; box-shadow: rgba(0, 0, 0, 0.15) 0px 3pt 12pt; display: inline; height: 45pt; padding: 0px; position: fixed; right: 18pt; top: auto; width: 45pt; z-index: 2147483646; } </style>');
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <!-- end messenger -->
