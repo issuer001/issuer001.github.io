@@ -109,21 +109,7 @@ ga('send', 'pageview');
 <body class="main" id="mainBody">
 <!-- messenger -->
 <script>
-  /*
-  function wait(ms){
-     var start = new Date().getTime();
-     var end = start;
-     while(end < start + ms) {
-       end = new Date().getTime();
-    }
-  }
-  $(document).bind('fbInit',function(){
-      console.log('fbInit complete; FB Object is Available');
-      wait(3000);
-      $('.fb_dialog').remove();
-      alert("dialog removed");
-  });
-  */
+
   window.fbAsyncInit = function() {
     FB.init({
       appId            : '179805622766539',
@@ -131,7 +117,6 @@ ga('send', 'pageview');
       xfbml            : true,
       version          : 'v2.11'
     });
-     //$(document).trigger('fbInit'); // trigger event 
   };
 
   (function(d, s, id){
