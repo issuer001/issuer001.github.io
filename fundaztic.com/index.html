@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<base href="https://fundaztic.com/"/>
 <title>Fundaztic</title>
 
 <!-- Creme Digital Google Tag Manager -->
@@ -73,6 +72,11 @@ mixpanel.init("cbdaa9e3aed81d3ec6d3565dd07d9dd9");</script><!-- end Mixpanel -->
 
 
 <link rel="stylesheet" type="text/css" href="https://fundaztic.com//cms/scripts/jquery/dev_frontend.css"/>
+<!-- Insert languageSelector CSS -->
+<link rel="stylesheet" href="translate/language.css">
+
+<!-- CSS of this example page -->
+<link rel="stylesheet" href="translate/example.css">
 <script src="https://fundaztic.com//cms/scripts/jquery/jquery-1.11.1.js"></script><script src="https://fundaztic.com//cms/scripts/jquery/jqueryui.js"></script><script src="https://fundaztic.com//cms/scripts/jquery/plugin/jquery.form.js"></script><script src="https://fundaztic.com//cms/scripts/main.js"></script><script src="https://fundaztic.com//cms/scripts/JSON.js"></script><script src="https://fundaztic.com//cms/scripts/search.js"></script>
 </head>
 <body>
@@ -110,6 +114,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   minimized="false">
 </div>
 <!-- end messenger html -->
+<!--translation-->
+<script id="language_script" data-languages="en,zh" data-debug="1" src="translate/language.js"></script>
+<!--endtranslation-->
 <div class="container-fluid">
 	<header class="header">
 <!--mobile menu-->
@@ -141,9 +148,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<li>
 								<a href="about-us" class="">About Us</a>
 							</li>
-							
+
             <li class="navbar-btn"><a href="https://p2p.fundaztic.com/mobileMember/member_center" target="_blank"><i class="fa fa-sign-in">&nbsp;</i> Sign In</a></li>
-            <li class="navbar-btn"><a id="register-mobile" href="https://p2p.fundaztic.com/mobileRegistration/to-regist" target="_blank"><i class="fa fa-pencil">&nbsp;</i> Register</a></li>  	
+            <li class="navbar-btn"><a id="register-mobile" href="https://p2p.fundaztic.com/mobileRegistration/to-regist" target="_blank"><i class="fa fa-pencil">&nbsp;</i> Register</a></li>
           </ul>
         </nav>
       </div>
@@ -151,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 <!--mobile menu end-->
-	
+
 	<div class="logo"><a href="https://fundaztic.com/"><img src="https://fundaztic.com/img/logo.png" alt="Fundaztic" title="Fundaztic"></a></div>
     <nav class="desktop">
     	<ul>
@@ -176,32 +183,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="desktop login">
     	<ul>
             <li class="navbar-btn"><a href="https://p2p.fundaztic.com/visitor/to-login" target="_blank" class="btn-login"><i class="fa fa-sign-in">&nbsp;</i> Sign In</a></li>
-            <li class="navbar-btn"><a id="register-desktop" href="https://p2p.fundaztic.com/visitor/to-regist" target="_blank" class="btn-signup"><i class="fa fa-pencil">&nbsp;</i> Register</a></li> 
-        </ul>
+            <li class="navbar-btn"><a id="register-desktop" href="https://p2p.fundaztic.com/visitor/to-regist" target="_blank" class="btn-signup"><i class="fa fa-pencil">&nbsp;</i> Register</a></li>
+            <li class="navbar-btn"><language class="languageFrameSelect" data-type="select"></language></li>
+      </ul>
     </nav>
 
     <div class="clearfloat"></div>
 
 <script type="text/javascript">
 $("#register-mobile").click(function() {
-mixpanel.track("mobile:nav:register button"); 
+mixpanel.track("mobile:nav:register button");
 });
 
 </script>
 
 </header>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators 
+  <!-- Indicators
   <ol class="carousel-indicators">
 		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		  </ol>-->
   <div class="carousel-inner" style="height:85%;" role="listbox">
-  
+
         <div class="item banner active" style="background: url('https://fundaztic.com/cms/upload_files/banner/banner_image_000001.jpg') center no-repeat;background-size:cover;">
 	      <div class="container">
         <!--Caption-->
         <div class="banner-content">
-            <div class="banner-welcome">Where smart investors and entrepreneurs connect</div>                        <div class="clearfloat"><style type="text/css">
+            <div lang="zh" class="banner-welcome">中文版</div>
+            <div lang="en" class="banner-welcome">Where smart investors and entrepreneurs connect</div>
+            <div class="clearfloat"><style type="text/css">
 .mobileShow { display: none;}
    /* Smartphone Portrait and Landscape */
    @media only screen
@@ -227,7 +237,7 @@ mixpanel.track("mobile:nav:register button");
         <!--/ Caption-->
       </div>
 	    </div>
-	    
+
   </div>
 </div>
  <div class="featured-holder2">
@@ -302,7 +312,7 @@ mixpanel.track("mobile:nav:register button");
 <u>Effective interest rate</u> is the one which caters to the compounding periods during a payment plan. It is used to compare the annual interest between funding with different compounding periods like week, month, year etc.
 <br /><br /><i><small>
 In general stated or nominal interest rate is less than the effective one. And the latter depicts the true picture of financial payments. Therefore, it is important to look at the effective interest rate when deciding to accept an offer to get funds or when investing.
-To make matters less confusing for issuers, it may be simpler to look at the monthly repayment amount based on the rates offered to decide if the business cash flow is sufficient to repay the funding.</small></i> 
+To make matters less confusing for issuers, it may be simpler to look at the monthly repayment amount based on the rates offered to decide if the business cash flow is sufficient to repay the funding.</small></i>
 				</p>
 			</div>
 		</div>
@@ -310,24 +320,24 @@ To make matters less confusing for issuers, it may be simpler to look at the mon
 	<div class="calculator-box">
 		<div class="text-wrap">
 			<div class="text-box">
-				<script src="js/checkrate.js"></script>	
+				<script src="js/checkrate.js"></script>
 				<form action="javascript:void(0)" name="fmRateTable" id="fmRateTable" method="post">
 				<div class="label-box">Funding Amount (RM)</div>
 				<div class="input-box"><input class="input-full" id="loadamount" name="loadamount" placeholder="e.g.100000" type="text" /></div>
-				
-				<div class="label-box">Interest Rate p.a. (Flat)</div>			
+
+				<div class="label-box">Interest Rate p.a. (Flat)</div>
 				<div class="input-box"><input class="input-onethird" id="interest" name="interest" placeholder="e.g.7.0" type="text" /><span class="input-span input-span-onethird">%</span></div>
-				
-				<div class="label-box">Tenure</div>				
+
+				<div class="label-box">Tenure</div>
 				<div class="input-box"><input class="input-onethird" id="tenure" name="tenure" placeholder="e.g.24" type="text" /><span class="input-span input-span-onethird">Months</span></div>
-				
+
 				<div class="label-box">Monthly Instalment Amount</div>
 				<div class="input-box"><span class="input-span input-span-full" id="instalmentamount">RM4,750.00</span></div>
-			
-				<!--	
-				<div class="label-box">No. of Instalment Paid-To-Date</div>				
+
+				<!--
+				<div class="label-box">No. of Instalment Paid-To-Date</div>
 				<div class="input-box"><input class="input-full" id="instalment" name="instalment" placeholder="e.g.36" type="text" /></div>
-				
+
 				<div class="label-box">Amount Paid-To-Date</div>
 				<div class="input-box"><span class="input-span input-span-full" id="amounttopay">RM53,123.72</span></div>
 				-->
@@ -382,7 +392,7 @@ To make matters less confusing for issuers, it may be simpler to look at the mon
    and (min-device-width : 320px)
    and (max-device-width : 480px){  .mobileHide { display: none;}}</style>
 			  <iframe src="https://giphy.com/embed/12KcApEVfmBjWg" width="450" height="240" frameBorder="0" class="giphy-embed mobileHide" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/12KcApEVfmBjWg"></a></p>
-			</div>    
+			</div>
 		</div>
 		<div class="mobileShow">
 			<div class="embed-responsive embed-responsive-16by9">
@@ -493,11 +503,11 @@ $("#referTabletLogin").attr("href", "javascript:location.href='https://p2p.funda
 $("#referTabletSignup").attr("href", "javascript:location.href='https://p2p.fundaztic.com/mobileRegistration/to-regist'");
 $("#cfa-register").attr("href", "https://p2p.fundaztic.com/mobileRegistration/to-regist");
 }
-</script>    	
+</script>
     	<div class="footer-social">
 
 		<a href="https://www.facebook.com/fundaztic/" target="_blank" class="ico-social ico-fb"></a>		<a href="https://www.youtube.com/watch?v=uJ2sB3YirdQ" target="_blank" class="ico-social ico-youtube"></a>		<a href="https://www.linkedin.com/company/fundaztic" target="_blank" class="ico-social ico-linkedin"></a>		</div>
-		
+
         <hr class="footer-sep">
         <div class="footer-nav2"></div>
     	<div class="footer-copyright">Copyright © 2017 Peoplender Sdn Bhd. All Rights Reserved.</div>
@@ -511,16 +521,16 @@ $("#cfa-register").attr("href", "https://p2p.fundaztic.com/mobileRegistration/to
 <script type="text/javascript" src="js/touchswipe.min.js"></script>
 
 <script>
-	$(document).ready(function() {  
+	$(document).ready(function() {
 
 					//Enable swiping...
 					$(".carousel-inner").swipe( {
 						//Generic swipe handler for all directions
 						swipeLeft:function(event, direction, distance, duration, fingerCount) {
-							$(this).parent().carousel('next'); 
+							$(this).parent().carousel('next');
 						},
 						swipeRight: function() {
-							$(this).parent().carousel('prev'); 
+							$(this).parent().carousel('prev');
 						},
 						//Default is 75px, set to 0 for demo so any distance triggers swipe
 						threshold:0
